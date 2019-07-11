@@ -1,0 +1,121 @@
+html, body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-image: url("header-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    height: 80vh;
+    padding: 0 10vw;
+}
+
+.page2 {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    /* height: 100px;
+    width: 100%;
+    background-color: #212529; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 26px;
+    color: #fed136;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.label {
+    color: white;
+    
+    margin-right: 40px;
+    float: right;
+    display: none;
+    
+    
+}
+
+.menu {
+    margin-right: 30px;
+    float: right;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    line-height: 100px;
+    color: white;
+    font-size: 16px;
+    clear: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#toggle {
+    display: none;
+}
+
+.topText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+}
+
+@media screen and (max-width: 950px) {
+    .navbar {
+        height: 100px;
+    width: 100%;
+    background-color: #212529;
+    }
+    .topText {
+        font-size: 25px;
+    }
+    header {
+        height: 70vh;
+    }
+    .label {
+        display: block;
+        background-color: #fed136;
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px;
+        padding-left: 10px;
+        margin-top: 25px;
+        /* width: 26px; */
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        z-index: 10;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        background-color: #212529;
+        margin: 0;
+    }
+    .logo {
+        font-size: 14px;
+    }
+    #toggle:checked + .menu {
+        display:block;
+
+    } 
+}
